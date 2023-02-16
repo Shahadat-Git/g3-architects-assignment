@@ -244,7 +244,7 @@ body {
 /* some facts style */
 .some-facts {
     margin-top: 50px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .some-facts h2 {
@@ -273,7 +273,7 @@ body {
     border-radius: 8px;
     padding: 40px;
     width: 9%;
-    
+
 }
 
 .history :hover {
@@ -295,6 +295,46 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #727272;
+}
+
+/* sponsor section style */
+.sponsor-container {
+    text-align: center;
+}
+
+.sponsor-container h2 {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sponsor-container p {
+    color: #131313;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    padding: 24px;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.sponsors-logo img {
+    filter: grayscale(100%);
+}
+
+.footer-text {
+    background: #FFF4E7;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
+    font-size: 20px;
+    color: #424242;
+    margin-top: 50px;
 }
 
 /* responsive part  */
@@ -327,6 +367,10 @@ body {
         padding: 0;
     }
 
+    .quick-photos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .features-container {
         flex-direction: column;
         gap: 40px;
@@ -341,6 +385,7 @@ body {
         bottom: 0%;
         left: 0%;
         margin: 0px auto;
+        padding: 20px;
     }
 
     .historys {
@@ -351,6 +396,12 @@ body {
 
     .history {
         width: 30%;
-        
+
+    }
+
+    .sponsors-logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
     }
 }
