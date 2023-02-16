@@ -225,6 +225,7 @@ body {
     position: absolute;
     bottom: 1%;
     left: 45%;
+    cursor: pointer;
 }
 
 .exp-box h2 {
@@ -240,6 +241,61 @@ body {
     text-align: center;
 }
 
+/* some facts style */
+.some-facts {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.some-facts h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.some-facts p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin: 24px 0;
+}
+
+/* historys section style */
+.historys {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.history {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px;
+    width: 9%;
+    
+}
+
+.history :hover {
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+.history img {
+    width: 40%;
+}
+
+.history h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #424242;
+}
+
+.history p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+}
 
 /* responsive part  */
 /* mobile responsive */
@@ -285,5 +341,16 @@ body {
         bottom: 0%;
         left: 0%;
         margin: 0px auto;
+    }
+
+    .historys {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .history {
+        width: 30%;
+        
     }
 }
